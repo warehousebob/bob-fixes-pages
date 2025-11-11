@@ -1,4 +1,4 @@
-# Bob Fixes Pages — `opt-bob-green`
+# Bob Fixes Pages 
 
 Real-time UX/CRO audits on **Cloud Run**. Returns JSON “Fix Cards” used by the Chrome side panel.
 
