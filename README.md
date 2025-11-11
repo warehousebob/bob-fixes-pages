@@ -17,7 +17,7 @@ Copy code
   "html": "<!doctype html>... (optional)",
   "mode": "flash"
 }
-200 → JSON array of Fix Cards:
+200 → JSON array of Fix Cards
 
 json
 Copy code
@@ -51,7 +51,7 @@ gcloud run deploy opt-bob-green \
   --image us-west2-docker.pkg.dev/$PROJECT_ID/bob/opt-bob-green:latest \
   --region us-west2 --allow-unauthenticated
 CI/CD (Cloud Build)
-Add cloudbuild.yaml (below) and create a GitHub trigger on main.
+Add cloudbuild.yaml (see below) and create a GitHub trigger on main.
 
 Architecture (short)
 Chrome Extension → bob-gateway (API) → opt-bob-green (fast audits, Gemini 2.5 Flash).
@@ -70,8 +70,7 @@ License: MIT
 bash
 Copy code
 
-If you want CI/CD, also add this file at repo root as **cloudbuild.yaml**:
-
+### (Optional) Add `cloudbuild.yaml` at repo root
 ```yaml
 steps:
   - name: gcr.io/cloud-builders/docker
